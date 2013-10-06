@@ -1,9 +1,9 @@
 Basic-HTML-5-Layout
 ===================
 
-Hand write clean code of one basic HTML 5 Basic Layout!
+Hand write clean code of the basic HTML 5 Basic Layout!
 
-Please click <a href="" target="_blank"> <b> here </b> </a>to see the online demo.
+Please click <a href="http://demo.ebizdesigner.com/html5/html5layout.html" target="_blank"> <b> here </b> </a>to see the online demo.
 
 <p><img width="90%" align="center" src="Basic-Html5-Layout.jpg"></p>
 <p><img width="40%" align="center" src="Basic-Html5-Layout(mobile).jpg"></p>
