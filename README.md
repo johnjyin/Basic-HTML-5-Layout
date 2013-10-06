@@ -5,8 +5,8 @@ Hand write clean code of the basic HTML 5 Basic Layout!
 
 Please click <a href="http://demo.ebizdesigner.com/html5/html5layout.html" target="_blank"> <b> here </b> </a>to see the online demo.
 
-<p><img width="90%" align="center" src="Basic-Html5-Layout.jpg"></p>
-<p><img width="40%" align="center" src="Basic-Html5-Layout(mobile).jpg"></p>
+<div style="width:100%; margin:auto;"><img width="90%" src="Basic-Html5-Layout.jpg"></p>
+<p><img width="40%" src="Basic-Html5-Layout(mobile).jpg"></p>
 
 <p>One of the MOST tricky things working with nested floats is how we solve the Collapsed Container.</p>
 <img width="90%" src="Basic-Html5-Layout-collapsed-container.jpg"> </img>
