@@ -5,11 +5,11 @@ Hand write clean code of one basic HTML 5 Basic Layout!
 
 Please click <a href="" target="_blank"> <b> here </b> </a>to see the online demo.
 
-<img width="70%" src="Basic-Html5-Layout.jpg"> <br>
-<img width="30%" src="Basic-Html5-Layout(mobile).jpg">
+<img width="90%" align="center" src="Basic-Html5-Layout.jpg"> <br>
+<img width="40%" align="center" src="Basic-Html5-Layout(mobile).jpg">
 
 <p>One of the MOST tricky things working with nested floats is how we solve the Collapsed Container.</p>
-<img width="70%" src="Basic-Html5-Layout-collapsed-container.jpg"> </img>
+<img width="90%" src="Basic-Html5-Layout-collapsed-container.jpg"> </img>
 
 In our code, we have three following solutions seperately:</p>
 - MANUALLY DIV METHOD is to manually append one empty div at the end of the last children div : <div style="clear: both;"></div>
