@@ -17,10 +17,9 @@ We could find the Flex Box would be the best choice to make the structure of pag
 <p><img width="40%" src="Basic-Html5-Layout(mobile).jpg"></p>
 
 In here, I summarize out all the key points of each method for your reference:
-<h1>Left Floating Divs</h1>
-<hr>
+<h2>Left Floating Divs</h2>
 
-- Collapsed Container
+<h3>Collapsed Container </h3>
 <p>One of the MOST tricky things working with nested floats is how we solve the Collapsed Container.</p>
 <img width="90%" src="Basic-Html5-Layout-collapsed-container.jpg"> </img>
 
@@ -33,11 +32,10 @@ Details discussion please refer to CSS Guru's articles:
 - <a href="http://css-tricks.com/all-about-floats/" target="_blank">All About Floats</a>
 - <a href="http://www.positioniseverything.net/easyclearing.html" target="_blank">How To Clear Floats Without Structural Markup</a>
 
-- Tricky Width
-<P>Another MOST tricky things working with nested floating Div components is when set the width and height properties of an element with CSS, we just set the width and height of the Content area.</p>
+<h3>Tricky Width</h3>
+Another MOST tricky things working with nested floating Div components is when set the width and height properties of an element with CSS, we just set the width and height of the Content area.</p>
 <img width="50%" src="Basic-Html5-Layout-css-block.jpg"></img>
-<p>In order to come true auto stretching all children Divs along with their parent container, we have to consider all possible sizes of the parent.</p>
-<p>For example, like the Content and Aside, when we set them with 9px margin, so the 67% (content) + 2% (left+right margin) + 28% (aside) + 2% (left+right margin) = 100% width.</p>
-
+In order to auto stretch all children Divs along with and inside their parent container, we have to consider all possible sizes of the parent.</p>
+For example, as for the Header div, when the window's width is just 481px (this's the smallest possible width), in order to keep the Header div inside its container rather then overflow, it's content size must be smaller then 96%! That's is 96% + 4% (=20px/481px) < 100% 
 Details discussion please refer to my post: <a href="http://www.ebizdesigner.com/website-building/css/item/48-responsive-floating-divs.html" target="_blank">Responsive Floating Divs</a>.
 
