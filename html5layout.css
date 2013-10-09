@@ -1,24 +1,42 @@
+/* GLOBAL STYLE */
 * {
     margin: 0; 
     padding: 0;
-    text-align: center;
-    color: #555555; 
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
 }
 
+/* TITLE STYLE */
+.title {
+	font: 16px, #555555, "Comic Sans MS", cursive, sans-serif;
+}
+
+/* STYLE STYLE */
 .styles {
 	font: italic 13px Georgia, serif;
 	color: #AAAAAA;
 }
 
-div:hover {
-    background-color: #CCCCCC;
+/* INFORMATION ICON */
+.info-icon {
+    background: url("information.png") no-repeat right top;
+    float: right;
+	width: 10px;
+	height: 10px;
 }
 
+.info-box {
+    color: #555;
+    border-radius: 10px;
+    font-family: Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding: 10px 10px 10px 36px;
+    margin: 10px;
+}
+
+/* TOP CONTAINER */
 .container {
-    width: 98%;
-	padding: 1%;
-    background-color: #DDDDDD;
+	margin: 9px auto;
+	border: 1px solid #AAAAAA;
+    width: 97%;
 	overflow: auto;  /* OVERFLOW METHOD  */
 }
 
@@ -43,40 +61,160 @@ div:hover {
 }
 */
 
-.header {
-    width: 98%;
-    margin: 1%;
-    background-color: #EEEEEE;
-    float: left;
+/*****  CSS FLOATING DIV  *****/
+
+/* 1ST LEVEL DIV  */
+.header,
+.contentcontainer,
+.footer {
+    margin: 9px;
+	border: 1px solid #AAAAAA;
+    width: 97%;
 }
 
+/* 2ND LEVEL DIV */
 .content {
-    width: 68%;
-    margin: 1%;
-    background-color: #EEEEEE;
-    float: left;
+	margin: 9px;
+	border: 1px solid #AAAAAA;
+	width: 67%;
 }
 
 .aside {
-    width: 28%;
-    margin: 1%;
-    background-color: #EEEEEE;
+	margin: 9px;
+	border: 1px solid #AAAAAA;
+    width: 24%;
+}
+
+/* 3RD LEVEL DIV */
+.block {
+	margin: 9px;
+	border: 1px solid #AAAAAA;
+	width: 90%;
+}
+
+/* FLOATING DIVs */
+.floatdiv {
     float: left;
 }
 
-.footer {
+
+/*****  CSS 3 BOX-SIZING  *****/
+
+.box {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+}
+
+.box-contentcontainer {
+	margin: 5px auto;
+	padding: 4px;
+	border: 1px solid #AAAAAA;
     width: 98%;
-    margin: 1%;
-    background-color: #EEEEEE; 
-    float: left;  /* FLOAT METHOD */
+}
+
+.box-content {
+	padding: 9px;
+	margin: 3px 0;
+	border: 1px solid #AAAAAA;
+	width: 70%;
+}
+
+.box-aside {
+	padding: 9px;
+	margin: 3px 0;
+	border: 1px solid #AAAAAA;
+	width: 30%;
+}
+
+.box-block {
+	padding: 9px;
+	margin: 5px 0;
+	border: 1px solid #AAAAAA;
+	width: 100%;
+}
+
+/*****  CSS 3 FLEX BOX  *****/
+
+.flex-contentcontainer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: box;
+	
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-ms-orient: horizontal;
+	orient: horizontal;
+	
+	-webkit-box-pack: start;
+	-moz-box-pack: start;
+	-ms-pack: start;
+	box-pack: start;
+	
+	justify-content: space-around;
+	
+	border: 1px solid #AAAAAA;
+	width: 99%;
+}
+
+.flex-content {
+	-webkit-box-flex: 7;
+	-moz-box-flex: 7;
+	-ms-flex: 7;
+	box-flex: 7;
+	
+	border: 1px solid #AAAAAA;
+	margin: 9px;
+}
+
+.flex-aside {
+	-webkit-box-flex: 3;
+	-moz-box-flex: 3;
+	-ms-flex: 3;
+	box-flex: 3;
+
+	border: 1px solid #AAAAAA;
+	margin: 9px;
+}
+
+.flex-block {
+	border: 1px solid #AAAAAA;
+	margin: 9px;
 }
 
 @media (max-width: 480px) {
-    .aside {
-        width: 98%;
-        border: 1% solid;
+	.container {
+		width: 94%;
+	}
+	
+	.header,
+	.contentcontainer,
+	.footer {
+		width: 95%;
+	}
+	
+    .aside,
+	.content {
+		width: 95%;
+	}
+	
+	.box-aside,
+	.box-content {
+        width: 100%;
     }
-    .content {
-        width: 98%;
-    }
+	
+	.flex-contentcontainer {
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-ms-orient: vertical;
+		box-orient: vertical;
+	}
+	
+	.flex-aside,
+	.flex-content  {
+		-webkit-box-flex: 1;
+		-moz-box-flex: 1;
+		-ms-flex: 1;
+		box-flex: 1;
+	}
 }
