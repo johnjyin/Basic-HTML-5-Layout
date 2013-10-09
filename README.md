@@ -1,9 +1,18 @@
 Basic-HTML-5-Layout
 ===================
 
-Hand write clean code of the basic HTML 5 Basic Layout!
+This Repo is hoping to share all the secrets of Structure HTML 5 Basic Layout!
+Notes: it's about how structring HTML 5 page Layout, not about Polish. Usually, all these Structure Divs would be hidden back of Decoration Divs.
 
 Please click <a href="http://demo.ebizdesigner.com/html5/html5layout.html" target="_blank"> <b> here </b> </a>to see the online demo.
+
+There THERE methods to make a basic HTML 5 Layout!
+- Use left Floating Divs
+- Use CSS 3 Box-Sizing
+- Use CSS 3 Flex Box
+
+We could find CSS 3 Flex Box would be the best 
+
 
 <div style="width:100%; margin:auto;"><img width="90%" src="Basic-Html5-Layout.jpg"></p>
 <p><img width="40%" src="Basic-Html5-Layout(mobile).jpg"></p>
